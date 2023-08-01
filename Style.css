@@ -1,0 +1,125 @@
+.border-square {
+  background-color: #f8f8f8;
+  padding: 20px; /* Khoảng cách từ khung đến nội dung bên trong */
+  border: 1px solid white; 
+  display: inline-block;
+  text-align: center;
+}
+
+  
+  .overlay-text {
+    background-color:#ADA5A5; /* Màu xám với độ mờ 70% */
+    color: #fff; /* Màu trắng cho chữ */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px; /* Khoảng cách từ chữ tới viền */
+    border-top-left-radius: 13px; /* Làm tròn góc trên bên trái của chữ */
+    border-top-right-radius: 13px; /* Làm tròn góc trên bên phải của chữ */
+  }
+  
+  .image-container {
+    position: relative;
+    border-radius: 13px; /* Làm tròn góc 13px cho ảnh */
+    overflow: hidden; /* Ẩn phần nằm ngoài khung */
+  }
+  
+  .image-container img {
+    width: 100%;
+    display: block;
+  }
+  
+  .caption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .container2 {
+    background-color:#f8f8f8;
+
+  }
+  
+  .flex-container {
+    display: flex; /* Tạo flex container */
+    justify-content: space-between; /* Canh các phần tử về hai bên */
+  }
+  
+  .news-item {
+    flex: 1; /* Chia đều không gian cho các phần tử con */
+    border: 0px solid #000;
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center; /* Căn giữa nội dung trong flex item */
+  }
+  
+  img {
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Khoảng cách giữa ảnh và chữ bên trong item */
+  }
+  
+  samp {
+    margin: 0;
+    
+  }
+
+
+   /* footer */
+   /* .cha{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+   }
+   .con, .con2, .con3, .con4, .con5, .con6 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 15px;
+  } */
+  
+  .menu-footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .menu-item-footer div {
+    padding: 10px 0;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 188px 420px 305px 1fr;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  .div-footer {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+
+  /* header */
+  .menu-container {
+    display: grid;
+    grid-template-columns: repeat(15, auto); /* Có 15 cột, tự động căn chỉnh chiều rộng cho mỗi cột */
+    gap: 10px; /* Khoảng cách giữa các cột */
+    justify-content: center; /* Căn giữa các cột theo chiều ngang */
+    align-items: center; /* Căn giữa các cột theo chiều dọc */
+    /* overflow-x: auto; Trượt ngang nếu menu quá rộng */
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Menu items nằm trong 1 hàng */
+  }
+  
+  li {
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 4px;
+    background-color:white;
+    white-space: nowrap; /* Ngăn chặn việc xuống dòng trong menu item */
+  }
+  
+  li i {
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản trong mục menu */
+  }
+  

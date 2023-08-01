@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+        .error-message {
+          color: red;
+        }
+      </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="shadow-lg p-3 mb-5 bg-body rounded">
+        <form id="registrationForm" >
+          <div class="d-flex">
+            <div class="col-5">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >FullName <span style="color: red">*</span></label
+                >
+                <input type="text" class="form-control" id="fullName" name="fullName" />
+                <span id="fullNameError" class="error-message"></span>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Password <span style="color: red">*</span></label
+                >
+                <input type="password" class="form-control" id="passWord" />
+                <span id="passWordError" class="error-message"></span>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email <span style="color: red">*</span>
+                </label>
+                <input type="text" class="form-control" id="email" />
+                <span id="emailError" class="error-message"> </span>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Birthday <span style="color: red">*</span></label
+                >
+                <input type="text" class="form-control" id="birthday"  />
+                <span id="birthdayError" class="error-message"></span>
+              </div>
+            </div>
+
+            <div class="col-1"></div>
+
+            <div class="col-5">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >UserName <span style="color: red">*</span></label
+                >
+                <input type="text" class="form-control" id="userName" />
+                <span id="userNameError" class="error-message"></span>
+
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >RePassword <span style="color: red">*</span></label
+                >
+                <input type="password" class="form-control" id="rePassword" />
+                <span id="rePasswordError" class="error-message"></span>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Phone <span style="color: red">*</span></label
+                >
+                <input type="text" class="form-control" id="phone" />
+                <span id="phoneError" class="error-message"></span>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Gender <span style="color: red">*</span></label>
+                <div>
+                    <input type="radio" name="gender" id="maleRadio" />
+                    <label class="custom-control-label" for="maleRadio">Male</label>
+            
+                    <input type="radio" name="gender" id="femaleRadio" />
+                    <label class="custom-control-label" for="femaleRadio">Female</label>
+            
+                    <input type="radio" name="gender" id="otherRadio" />
+                    <label class="custom-control-label" for="otherRadio">Other</label>
+                </div>
+                <span id="genderError" class="error-message"></span>
+            </div>
+            
+            </div>
+          </div>
+          <div class="d-flex">
+          <div class="col-11">
+            <div class="mb-3">
+              <label for="address" class="form-label"
+                >Address <span style="color: red">*</span></label
+              >
+              <br />
+              <textarea id="address" name="address" class="form-control" rows="4" cols="70"></textarea>
+              <span id="addressError" class="error-message"></span>
+            </div>       
+          </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Register</button>
+          <button type="submit" class="btn btn-danger">Cancel</button>
+        </form>
+      </div>
+
+    </section>
+   <script src="validateForm.js"></script>
+  </body>
+</html>
+  </body>
+</html>
